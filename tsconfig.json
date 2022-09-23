@@ -1,0 +1,30 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.web.json",
+    "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+    "compilerOptions": {
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": false,
+        "strict": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+
+    "references": [
+        {
+            "path": "./tsconfig.config.json"
+        }
+    ]
+}
